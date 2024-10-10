@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+/* 초기화 CSS */
+
+body {
+   margin: 0;
+   padding: 0;
+   font-size: 0.9em;
+}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   color: black;
+   text-decoration: none;
+}
+
+p {
+   margin: 0;
+}
+
+/* 고정형 레이아웃 */
+
+.wrap {
+   min-width: 1200px;
+   overflow: hidden;
+}
+
+/* 헤더 */
+
+header {
+   position: relative;
+   height: 85px;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid rgb(193, 193, 193);
+   background-color: white;
+   width: 100%; /* 직방 메뉴 width가 100%이다. */
+}
+
+.nav__menu > li {
+   /* 하위 메뉴를 만들기 위해 적용 */
+   position: relative;
+   top: 0;
+
+   /* 수평 정렬 */
+   display: inline-block;
+   padding: 20px;
+}
+
+nav .login {
+   font-size: 11px;
+   background-color: rgb(232, 232, 232);
+   border: 1px solid rgb(202, 202, 202);
+   border-radius: 5px;
+   color: black;
+   width: 125px !important;
+   height: 30px;
+   margin-right: 20px;
+}
+
+nav .right-menu__btn {
+   width: 113px;
+}
+
+/* 본메뉴 */
+
+.w1 {
+   display: block;
+   font-size: 17px;
+   font-weight: bold;
+}
+
+.w2 {
+   display: block;
+   font-size: 13px;
+}
+
+/* 하위메뉴 */
+
+.sub-menu {
+   display: none; /* 화면에서 안보임 */
+   width: 200px;
+   background-color: white;
+
+   /* 하위 메뉴를 만들기 위해 absolute 적용(li태그를 기준으로) */
+   position: absolute;
+
+   /* 하위메뉴가 나타날 위치(메뉴 height와 같다) */
+   top: 85px;
+   border: 1px solid rgb(202, 202, 202);
+}
+
+.nav__menu li:hover .sub-meun {
+   display: block;
+}
+
+.sub-menu > li {
+   padding: 10px;
+}
+
+/* 섹션 1 */
+
+.main__banner1 {
+   background-image: url(../images/bg.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
+   height: 650px;
+}
+
+.banner1__top {
+   height: 260px;
+}
+.banner1__middle {
+   color: white;
+   text-align: center;
+}
+
+.banner1__middle > h2 {
+   font-size: 40px;
+   font-weight: bolder;
+}
+
+.banner1__bottom {
+   width: 574px;
+   height: 40px;
+   line-height: 40px;
+   display: flex;
+   background-color: rgba(4, 17, 59, 0.8);
+   font-weight: 900;
+   border-radius: 10px;
+   margin: 0 auto;
+   margin-top: 50px;
+   margin-bottom: 20px;
+}
+
+.tab-sub {
+   width: 20%;
+   text-align: center;
+   color: white;
+}
+
+.tab-sub.sub1 {
+   background-color: white;
+   width: 20%;
+   text-align: center;
+   color: black;
+   border-radius: 8px;
+}
+
+.input-group {
+   width: 574px;
+   margin: 0 auto;
+}
+
+.form-control {
+   height: 65px;
+}
+
+.input-group-text {
+   width: 70px;
+   background-color: rgb(255, 106, 36);
+   color: white;
+   font-size: 20px;
+   padding-left: 25px;
+}
+
+/* 섹션 2 */
+
+.main__banner2 {
+   width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   height: 300px;
+}
+.banner2__left {
+   margin: 0 20px;
+   width: 300px;
+}
+
+.banner2__maintext {
+   border-bottom: 1px solid rgb(221, 221, 221);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.main__banner2 p {
+   font-size: 20px;
+   font-weight: bold;
+   margin: 20px 0;
+}
+.main__banner2 a {
+   padding-top: 10px;
+}
+
+.banner2__left__img {
+   background-image: url(../images/banner1.jpg);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-position: center;
+   height: 170px;
+   margin-top: 10px;
+}
+
+.banner2__text {
+   width: 300px; /* 필요한 너비를 설정(필수) */
+   white-space: nowrap; /* 텍스트가 줄 바꿈되지 않도록 설정(필수) */
+   overflow: hidden; /* 넘치는 텍스트를 숨김(필수) */
+   text-overflow: ellipsis; /* 넘치는 텍스트를 말줄임표로 표시(필수) */
+   padding: 8px; /* 패딩 (옵션) */
+}
+
+.banner2__center {
+   margin: 0 20px;
+}
+
+.banner2__right {
+   margin-left: 20px;
+}
+
+.main__banner3 {
+   background-color: gray;
+   display: flex;
+}
+
+.banner3__img {
+   background-image: url(../images/phone.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
+   height: 300px;
+   width: 400px;
+}
+
+.ment1 {
+}

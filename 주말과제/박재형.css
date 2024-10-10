@@ -1,0 +1,117 @@
+body {
+   margin: 0;
+   padding: 0;
+   width: 1000px;
+   margin: 0 auto;
+}
+ul {
+   list-style-type: none;
+   background-color: black;
+   overflow: hidden;
+}
+li {
+   float: left;
+}
+li a {
+   text-decoration: none;
+   display: block;
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+   padding: 30px 50px 30px;
+}
+
+li a:hover {
+   background-color: white;
+   color: black;
+}
+
+/* ground 관련 코드 (잘 안됨. 하단 리스트 생성시 칸이 어긋남. ul. ground가 좌측 칸을 잡아먹음. 안배운것) */
+.ground {
+   display: none;
+   top: 100%;
+   left: 0;
+   background-color: black;
+   /* min-width: 160px; */
+}
+.ground li {
+   text-align: center;
+   display: block;
+   background-color: white;
+   color: black;
+   font-size: 20px;
+   font-weight: bold;
+}
+.ground li:hover {
+   background-color: black;
+   color: white;
+   font-weight: bold;
+}
+/* 사진 코드(확대 안됨) */
+.anfield {
+   margin: 100px 20px;
+   width: 100%;
+   text-align: center;
+}
+/* 리스트 호버 */
+li:hover .ground {
+   display: grid;
+   width: 100%;
+   float: left;
+}
+/* 차별화된 매칭 시스템 ~ 건강한 스포츠 문화를 만듭니다 */
+section {
+   width: 100%;
+   margin: 0 auto;
+   font-size: 18px;
+}
+section > div {
+   float: left;
+}
+.infobox {
+   text-align: center;
+   left: 100px;
+   border-collapse: collapse;
+   height: 200px;
+   border: 1px solid black;
+   width: 1000px;
+   color: black;
+   text-align: center;
+}
+strong {
+   text-decoration: underline;
+}
+
+/* 이하 Ctrl c v */
+.board_list {
+   width: 100%;
+   border-top: 1px solid #444;
+   /* border-collapse: collapse; */
+}
+td,
+th {
+   text-align: center;
+}
+.board_list caption {
+   padding: 20px;
+}
+.bt_wrap {
+   margin-top: 30px;
+   text-align: center;
+}
+.bt_wrap a {
+   display: inline-block;
+   min-width: 80px;
+   margin-left: 10px;
+   padding: 10px;
+   border: 1px solid #000;
+   border-radius: 2px;
+   font-size: 1.4rem;
+   text-align: center;
+}
+.bt_wrap a:hover {
+   text-decoration: underline;
+}
+.bt_list {
+   text-align: right;
+}

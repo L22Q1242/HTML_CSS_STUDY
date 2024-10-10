@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>레드향 주문하기</title>
+    <link rel="stylesheet" href="css/order.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>레드향 주문하기</h1>
+      <form>
+        <fieldset>
+          <legend>배송 정보</legend>
+          <!-- readonly : 읽기 전용 -->
+          <!-- autofocus : 사이트 접속시 포커싱될 input 창 지정 -->
+          <!-- required : 필수 입력 요구 -->
+          <!-- placeholder : 사용자에게 input 창에 입력해야 하는 정보를 설명 -->
+          <ul id="shipping">
+            <li>
+              <label for="prod">주문 상품</label>
+              <input
+                type="text"
+                id="prod"
+                name="prod"
+                value="상품용 3kg"
+                readonly
+              />
+            </li>
+            <li>
+              <label for="user-name">이름</label>
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                autofocus
+                required
+              />
+            </li>
+            <li>
+              <label for="addr">배송주소</label>
+              <input type="text" id="addr" name="addr" required />
+            </li>
+            <li>
+              <label for="email">이메일</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="test@test.com"
+              />
+            </li>
+            <li>
+              <label for="phone">연락처</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="하이픈을 빼고 입력해주세요"
+              />
+            </li>
+            <li>
+              <label for="d-day">배송 지정</label>
+              <input type="date" id="d-day" name="d-day" />
+              <small>(주문일로부터 최소 3일 이후)</small>
+            </li>
+            <!-- 텍스트 여러 줄 입력 -->
+            <li>
+              <!-- <textarea>: 많은 텍스트를 입력해야 할때 사용(게시판 등..) -->
+              <!-- rows: textarea의 가시적인 영역에 작성할 수 있는 텍스트 라인 갯수 -->
+              <!-- cols: 한 라인에 작성할 수 있는 글자 수(한글X, 영어O)  -->
+              <label for="memo">메모</label>
+              <textarea id="memo" name="memo" cols="40" rows="4"></textarea>
+            </li>
+          </ul>
+        </fieldset>
+        <div>
+          <input type="submit" value="주문하기" />
+          <input type="reset" value="취소하기" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

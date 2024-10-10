@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         html {
+            font-size: 30px;
+         }
+         #content {
+            font-size: 10px;
+         }
+         .para1 {
+            /* em, rem : 폰트 사이즈의 n배 */
+            /* rem : html문서의 폰트사이즈를 기준으로 n배 */
+            /* em : 부모태크(해당 태그를 감싸는 태그)의 폰트사이즈를 기준으로 n배 */
+            font-size: 2em;
+            font-size: 2rem;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="content">
+         <p class="para1">1. lorem</p>
+      </div>
+      <p class="para2">2. lorem</p>
+      <p class="para2">3. lorem</p>
+   </body>
+</html>

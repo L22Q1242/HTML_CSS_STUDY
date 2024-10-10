@@ -1,0 +1,107 @@
+/* 초기화 속성 */
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 10px;
+}
+
+ul,
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+
+   /* 부모 태그의 속성 값을 그대로 상속받아 사용 */
+   color: inherit;
+}
+
+/* 공통 - 버튼 */
+
+.bt_wrap {
+   margin-top: 30px;
+   text-align: center;
+}
+.bt_wrap a {
+   display: inline-block;
+   min-width: 80px;
+   margin-left: 10px;
+   padding: 10px;
+   border: 1px solid #000;
+   border-radius: 2px;
+   font-size: 1.4rem;
+   text-align: center;
+}
+.bt_wrap a:hover {
+   text-decoration: underline;
+}
+.bt_list {
+   text-align: right;
+}
+
+/* index.html */
+
+.wrap {
+   width: 1200px;
+   margin: 0 auto;
+}
+
+.board_list {
+   width: 100%;
+   border-top: 1px solid #444;
+   border-collapse: collapse;
+}
+
+.board_list caption {
+   padding: 30px;
+}
+
+.board_list th,
+.board_list td {
+   border-bottom: 1px solid #444;
+   padding: 10px;
+   text-align: center;
+}
+.board_list td.title > a:hover {
+   text-decoration: underline;
+}
+.board_page {
+   margin-top: 30px;
+
+   /* a태그 내부의 텍스트를 가운데 정렬하기 위해 사용
+   board_page 안에 적용해도 a태그는 .board_page의 자식요소이기 때문에 영향을 받는다. */
+   text-align: center;
+   display: flex;
+   justify-content: center;
+}
+
+.board_page a {
+   display: inline-block;
+   width: 32px;
+   height: 32px;
+   box-sizing: border-box;
+}
+
+.board_page a:hover {
+   text-decoration: underline;
+}
+
+.board_page a.bt {
+   font-size: 1.2rem;
+   letter-spacing: -4px;
+}
+
+.board_page a.num {
+   font-size: 1.4rem;
+}
+
+.board_page a.num.on {
+   border-color: #000;
+   background-color: #000;
+   color: #fff;
+}

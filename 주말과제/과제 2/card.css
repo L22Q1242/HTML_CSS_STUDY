@@ -1,0 +1,49 @@
+#animation {
+   width: 1000px;
+   margin: 0;
+}
+
+h1 {
+   text-align: center;
+   margin: 20px;
+}
+.baseballpark {
+   list-style: none;
+}
+.baseballpark li {
+   float: left;
+   position: relative;
+   /* overflow: hidden; */
+}
+.baseballpark img {
+   width: 300px;
+   height: 220px;
+   margin: 20px;
+   padding: 0px;
+   float: left;
+   border-radius: 5px;
+}
+
+.baseballpark .caption {
+   position: absolute;
+   top: -200px;
+   width: 300px;
+   height: 200px;
+   padding-top: 20px;
+   margin: 20px;
+   background-color: rgba(0, 0, 0, 0.4);
+   opacity: 0;
+   transition: all 1s ease-in;
+}
+.baseballpark li:hover .caption {
+   opacity: 1;
+   transform: translateY(200px);
+}
+.caption h2 {
+   text-align: center;
+}
+
+.caption h2,
+.caption p {
+   color: white;
+}
